@@ -1,5 +1,5 @@
-# CodeIgniter Model Creator
-A very basic Codeigniter Model Creator.
+# CodeIgniter Model Generator
+A very basic and hackable CodeIgniter4 model generator. Feel free to add cool features.
 
 Input file has to be a .txt file exported by phpMyAdmin.
 
