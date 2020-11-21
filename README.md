@@ -17,3 +17,16 @@ optional arguments:
   -p PASS_COUNT, --pass-count PASS_COUNT
                         how many line will be passed? (def=none)
 ```
+
+### Sample Output
+```sh
+<?php
+namespace App\Models;
+use \CodeIgniter\Model;
+class UsersModel extends Model {
+	protected $table = 'users';
+	protected $primaryKey = 'id';
+	protected $allowedFields = ['col1','col2'];
+}
+?>
+```
