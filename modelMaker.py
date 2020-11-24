@@ -28,11 +28,11 @@ def beatufiy(x = 0):
 
 beatufiy(int(PASSCOUNT)) if PASSCOUNT else beatufiy()
 
-with open(f'{args["table_name"]}.php', 'w') as f:
+with open(f'{TABLENAME.capitalize()}.php', 'w') as f:
     f.write('<?php\n')
     f.write('namespace App\Models;\n')
     f.write('use \CodeIgniter\Model;\n')
-    f.write('class {}'.format(TABLENAME) + 'Model extends Model {\n')
+    f.write('class {}'.format(TABLENAME.capitalize()) + 'Model extends Model {\n')
     f.write("\tprotected $table = '{}';\n".format(TABLENAME))
     f.write("\tprotected $primaryKey = 'id';\n")
     f.write("\tprotected $allowedFields = ")
